@@ -1,0 +1,92 @@
+const translations = {
+    ar: {
+        "nav-home": "الرئيسية", "nav-rules": "القوانين", "nav-roster": "الأعضاء", "nav-apply": "الانضمام", "nav-shop": "المتجر", "nav-media": "الفيديوهات", "nav-chat": "الدردشة",
+        "hero-title": 'جيلد <span class="highlight">RISE</span> للقمة',
+        "hero-desc": "نحن لا نسقط، بل ننهض دائماً كالفينيكس من وسط النيران لتدمير الأعداء في Conquer Online.",
+        "hero-btn": "انضم إلينا الآن", "rules-title": "قوانين الجيلد الأساسية",
+        "rule-1": "الالتزام بحضور الـ Guild War الأسبوعي ودعم التحالف.",
+        "rule-2": "الاحترام المتبادل بين جميع الأعضاء داخل وخارج الجيلد.",
+        "rule-3": "مساعدة الأعضاء الجدد وتوجيههم لرفع مهاراتهم وقوتهم.",
+        "roster-title": "قائمة قادة وأعضاء الجيلد", "th-name": "اسم اللاعب", "th-rank": "الرتبة", "th-class": "الشخصية (Class)",
+        "rank-l": "القائد (Leader)", "rank-d": "نائب (Deputy)", "apply-title": "طلب الانضمام للجيلد", "form-submit": "إرسال الطلب",
+        "shop-title": "متجر أدوات الجيلد المتاحة للبيع", "buy-btn": "شراء / تواصل", "media-title": "معرض حروب الجيلد",
+        "media-desc": "تابع أقوى اللقطات والـ Guild Wars الملحمية من قناتنا على اليوتيوب", "vid-1-title": "حرب الجيلد الكبرى (Guild War)",
+        "chat-title": "الدردشة الحية للجيلد", "chat-desc": "تواصل وتناقش مع أعضاء التحالف والجيلد مباشرة من هنا", "footer-text": "جميع الحقوق محفوظة لـ Rise Guild &copy; 2026"
+    },
+    en: {
+        "nav-home": "Home", "nav-rules": "Rules", "nav-roster": "Roster", "nav-apply": "Join Us", "nav-shop": "Shop", "nav-media": "Videos", "nav-chat": "Chat",
+        "hero-title": 'The <span class="highlight">RISE</span> Guild To The Top',
+        "hero-desc": "We never fall, we always rise like a phoenix from the ashes to destroy enemies in Conquer Online.",
+        "hero-btn": "Join Us Now", "rules-title": "Guild Core Rules",
+        "rule-1": "Commitment to attending the weekly Guild War and supporting the alliance.",
+        "rule-2": "Mutual respect among all members inside and outside the guild.",
+        "rule-3": "Helping new members and guiding them to raise their skills and power.",
+        "roster-title": "Guild Leaders & Members Roster", "th-name": "Player Name", "th-rank": "Rank", "th-class": "Class",
+        "rank-l": "Leader", "rank-d": "Deputy", "apply-title": "Apply for Guild Recruitment", "form-submit": "Submit Application",
+        "shop-title": "Guild Item Shop For Sale", "buy-btn": "Buy / Contact", "media-title": "Guild War Gallery",
+        "media-desc": "Follow the strongest clips and epic Guild Wars from our YouTube channel", "vid-1-title": "The Grand Guild War",
+        "chat-title": "Guild Live Chatroom", "chat-desc": "Connect and discuss with alliance and guild members instantly here", "footer-text": "All rights reserved to Rise Guild &copy; 2026"
+    },
+    tr: {
+        "nav-home": "Anasayfa", "nav-rules": "Kurallar", "nav-roster": "Üyeler", "nav-apply": "Katıl", "nav-shop": "Mağaza", "nav-media": "Videolar", "nav-chat": "Sohbet",
+        "hero-title": 'Zirveye <span class="highlight">RISE</span> Loncası',
+        "hero-desc": "Biz asla düşmeyiz, Conquer Online'da düşmanları yok etmek için küllerimizden doğan bir anka kuşu gibi her zaman yükseliriz.",
+        "hero-btn": "Şimdi Katıl", "rules-title": "Lonca Temel Kuralları",
+        "rule-1": "Haftalık Guild War'a katılma ve ittifaka destek sağlama zorunluluğu.",
+        "rule-2": "Lonca içinde ve dışında tüm üyeler arasında karşılıklı saygı.",
+        "rule-3": "Yeni üyelere yardım etmek ve becerilerini geliştirmeleri için onlara rehberlik etmek.",
+        "roster-title": "Lonca Liderleri ve Üye Listesi", "th-name": "Oyuncu Adı", "th-rank": "Rütbe", "th-class": "Sınıf (Class)",
+        "rank-l": "Lider", "rank-d": "Yardımcı", "apply-title": "Lonca Başvuru Formu", "form-submit": "Başvuruyu Gönder",
+        "shop-title": "Satılık Lonca Eşya Mağazası", "buy-btn": "Satın Al / İletişim", "media-title": "Lonca Savaşları Galerisi",
+        "media-desc": "YouTube kanalımızdan en güçlü kesitleri ve destansı Guild War videolarını takip edin", "vid-1-title": "Büyük Lonca Savaşı (Guild War)",
+        "chat-title": "Canlı Lonca Sohbet Odası", "chat-desc": "İttifak ve lonca üyeleriyle burada anında iletişim kurun ve tartışın", "footer-text": "Tüm hakları saklıdır Rise Guild &copy; 2026"
+    },
+    ro: {
+        "nav-home": "Acasă", "nav-rules": "Reguli", "nav-roster": "Membri", "nav-apply": "Alătură-te", "nav-shop": "Magazin", "nav-media": "Videoclipuri", "nav-chat": "Chat",
+        "hero-title": 'Gilda <span class="highlight">RISE</span> Către Vârf',
+        "hero-desc": "Noi nu cădem niciodată, ne ridicăm mereu ca o pasăre phoenix din cenușă pentru a distruge inamicii în Conquer Online.",
+        "hero-btn": "Alătură-te Acum", "rules-title": "Regulile De Bază Ale Gildei",
+        "rule-1": "Angajamentul de a participa la Guild War-ul săptămânal și de a susține alianța.",
+        "rule-2": "Respect reciproc între toți membrii în interiorul și în afara gildei.",
+        "rule-3": "Ajutorarea membrilor noi și ghidarea lor pentru a-și crește abilitățile și puterea.",
+        "roster-title": "Lista de Lideri și Membri ai Gildei", "th-name": "Nume Jucător", "th-rank": "Rang", "th-class": "Clasă (Class)",
+        "rank-l": "Lider", "rank-d": "Adjunct", "apply-title": "Formular de Recrutare în Gildă", "form-submit": "Trimite Cererea",
+        "shop-title": "Magazin de Obiecte al Gildei", "buy-btn": "Cumpără / Contact", "media-title": "Galeria Bătăliilor Noastre",
+        "media-desc": "Urmărește cele mai tari faze și Guild War-uri epice de pe canalul nostru de YouTube", "vid-1-title": "Marele Război Al Gildei (Guild War)",
+        "chat-title": "Chat Live al Gildei", "chat-desc": "Conectează-te și discută instantaneu cu membrii alianței și ai gildei aici", "footer-text": "Toate drepturile rezervate Rise Guild &copy; 2026"
+    }
+};
+
+const langSelect = document.getElementById("lang-select");
+const htmlTag = document.getElementById("html-tag");
+
+langSelect.addEventListener("change", (e) => {
+    const selectedLang = e.target.value;
+    htmlTag.setAttribute("dir", selectedLang === "ar" ? "rtl" : "ltr");
+    htmlTag.setAttribute("lang", selectedLang);
+
+    document.querySelectorAll("[data-key]").forEach(element => {
+        const key = element.getAttribute("data-key");
+        if (translations[selectedLang][key]) element.textContent = translations[selectedLang][key];
+    });
+
+    document.getElementById("hero-title").innerHTML = translations[selectedLang]["hero-title"];
+    document.getElementById("hero-desc").textContent = translations[selectedLang]["hero-desc"];
+    document.getElementById("hero-btn").textContent = translations[selectedLang]["hero-btn"];
+    document.getElementById("footer-text").textContent = translations[selectedLang]["footer-text"];
+    
+    // ترجمة حقول نموذج التقديم تلقائياً
+    const placeholders = {
+        ar: ["اسم الشخصية...", "المستوى...", "الشخصية...", "لماذا تريد الانضمام..."],
+        en: ["Character Name...", "Level...", "Class...", "Why do you want to join..."],
+        tr: ["Karakter Adı...", "Seviye...", "Sınıf...", "Neden katılmak istiyorsunuz..."],
+        ro: ["Nume Jucător...", "Nivel...", "Clasă...", "De ce vrei să te alături..."]
+    };
+    const inputs = document.querySelectorAll(".apply-form input, .apply-form textarea");
+    if(inputs.length >= 4) {
+        inputs[0].placeholder = placeholders[selectedLang][0];
+        inputs[1].placeholder = placeholders[selectedLang][1];
+        inputs[2].placeholder = placeholders[selectedLang][2];
+        inputs[3].placeholder = placeholders[selectedLang][3];
+    }
+});

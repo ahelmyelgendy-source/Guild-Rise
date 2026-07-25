@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="html-tag">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rise Guild - Conquer Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <!-- القائمة العلوية -->
+    <header>
+        <div class="logo">RISE GUILD</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" data-key="nav-home">الرئيسية</a></li>
+                <li><a href="#rules" data-key="nav-rules">القوانين</a></li>
+                <li><a href="#roster" data-key="nav-roster">الأعضاء</a></li>
+                <li><a href="#apply" data-key="nav-apply">الانضمام</a></li>
+                <li><a href="#shop" data-key="nav-shop">المتجر</a></li>
+                <li><a href="#media" data-key="nav-media">الفيديوهات</a></li>
+                <li><a href="#chat" data-key="nav-chat">الدردشة</a></li>
+                <li>
+                    <select id="lang-select" class="lang-dropdown">
+                        <option value="ar">العربية</option>
+                        <option value="en">English</option>
+                        <option value="tr">Türkçe</option>
+                        <option value="ro">Română</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- الواجهة الرئيسية -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="guild-logo-container">
+                <img src="https://imgbox.com" alt="Rise Guild Logo" class="guild-logo">
+            </div>
+            <h1 id="hero-title">جيلد <span class="highlight">RISE</span> للقمة</h1>
+            <p id="hero-desc">نحن لا نسقط، بل ننهض دائماً كالفينيكس من وسط النيران لتدمير الأعداء في Conquer Online.</p>
+            <a href="#apply" class="cta-button" id="hero-btn">انضم إلينا الآن</a>
+        </div>
+    </section>
+
+    <!-- قسم القوانين -->
+    <section id="rules" class="rules-section">
+        <h2 data-key="rules-title">قوانين الجيلد الأساسية</h2>
+        <div class="rules-grid">
+            <div class="rule-card"><h3>01</h3><p data-key="rule-1">الالتزام بحضور الـ Guild War الأسبوعي ودعم التحالف.</p></div>
+            <div class="rule-card"><h3>02</h3><p data-key="rule-2">الاحترام المتبادل بين جميع الأعضاء داخل وخارج الجيلد.</p></div>
+            <div class="rule-card"><h3>03</h3><p data-key="rule-3">مساعدة الأعضاء الجدد وتوجيههم لرفع مهاراتهم وقوتهم.</p></div>
+        </div>
+    </section>
+
+    <!-- قسم قائمة الأعضاء (Roster) -->
+    <section id="roster" class="roster-section">
+        <h2 data-key="roster-title">قائمة قادة وأعضاء الجيلد</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th data-key="th-name">اسم اللاعب</th>
+                        <th data-key="th-rank">الرتبة</th>
+                        <th data-key="th-class">الشخصية (Class)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Leader_Name</td><td class="rank-leader" data-key="rank-l">القائد (Leader)</td><td>Trojan / Pirate</td></tr>
+                    <tr><td>Deputy_Name1</td><td class="rank-deputy" data-key="rank-d">نائب (Deputy)</td><td>Water Taoist</td></tr>
+                    <tr><td>Member_Name1</td><td>عضو (Member)</td><td>Ninja</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- قسم طلب الانضمام (Apply Form) -->
+    <section id="apply" class="apply-section">
+        <h2 data-key="apply-title">طلب الانضمام للجيلد</h2>
+        <!-- يمكنك ربط هذا النموذج بـ Formspree أو تجميعه عبر الديسكورد لاحقاً -->
+        <form class="apply-form" onsubmit="event.preventDefault(); alert('تم إرسال طلبك بنجاح!');">
+            <input type="text" placeholder="اسم الشخصية في اللعبة (Character Name)" required>
+            <input type="number" placeholder="المستوى (Level)" required>
+            <input type="text" placeholder="الشخصية (Class: Trojan, Ninja, Fire...)" required>
+            <textarea placeholder="لماذا تريد الانضمام إلينا؟ (Why do you want to join us?)" rows="4"></textarea>
+            <button type="submit" class="cta-button" data-key="form-submit">إرسال الطلب</button>
+        </form>
+    </section>
+
+    <!-- قسم متجر الأدوات (Item Shop) -->
+    <section id="shop" class="shop-section">
+        <h2 data-key="shop-title">متجر أدوات الجيلد المتاحة للبيع</h2>
+        <div class="shop-grid">
+            <!-- أداة 1 -->
+            <div class="item-card">
+                <div class="item-icon">⚔️</div>
+                <h3>Super Blade +12</h3>
+                <p class="item-desc">7 Bound Jewels, Max Attack Souls</p>
+                <div class="price">5000 CPs / $20</div>
+                <button class="buy-btn" data-key="buy-btn" onclick="window.location.href='#apply'">شراء / تواصل</button>
+            </div>
+            <!-- أداة 2 -->
+            <div class="item-card">
+                <div class="item-icon">🛡️</div>
+                <h3>Super Armor +9</h3>
+                <p class="item-desc">Super Tortoise Gem, Max Defense</p>
+                <div class="price">2500 CPs / $10</div>
+                <button class="buy-btn" data-key="buy-btn" onclick="window.location.href='#apply'">شراء / تواصل</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الفيديوهات -->
+    <section id="media" class="media-section">
+        <h2 data-key="media-title">معرض حروب الجيلد</h2>
+        <p class="section-desc" data-key="media-desc">تابع أقوى اللقطات والـ Guild Wars الملحمية من قناتنا على اليوتيوب</p>
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-wrapper"><iframe src="https://youtube.com" frameborder="0" allowfullscreen></iframe></div>
+                <h3 data-key="vid-1-title">حرب الجيلد الكبرى (Guild War)</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم غرف الدردشة الحية (Chat) -->
+    <section id="chat" class="chat-section">
+        <h2 data-key="chat-title">الدردشة الحية للجيلد</h2>
+        <p class="section-desc" data-key="chat-desc">تواصل وتناقش مع أعضاء التحالف والجيلد مباشرة من هنا</p>
+        <div class="chat-container">
+            <!-- شات مخصص مجاني واحترافي للألعاب من موقع عريق ومفتوح -->
+            <iframe src="https://vclock.com" style="display:none;"></iframe> <!-- تمويه لتوسيع الأبعاد -->
+            <iframe src="https://cbox.ws" width="100%" height="450" allowtransparency="yes" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p id="footer-text">جميع الحقوق محفوظة لـ Rise Guild &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
